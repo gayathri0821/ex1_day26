@@ -1,0 +1,40 @@
+pseudocode:-
+
+BEGIN
+DISPLAY enter string
+INPUT str
+DISPLAY the original string is
+COMPUTE str.charAt(0)
+COMPUTE str.charAt(10)
+DISPLAY rnum
+END
+
+program:-
+//create package
+package march24;
+//create class
+public class Ex1
+{
+	//create main method
+	public static void main(String ...args)
+	{
+		//read input value by using Scanner class
+		java.util.Scanner sc=new java.util.Scanner(System.in);
+		//prompt the user for taking input value
+		System.out.println("enter string=");
+		//read the input string and store it in str
+		String str=sc.nextLine();
+		//print the input string
+		System.out.println("original string  is:"+str);
+		//using charAt()method to find index position  and store it in ch1
+	    char ch1=str.charAt(0);
+	  //using charAt()method to find index  position and store it in ch2
+	    char ch2=str.charAt(10);
+	    //print the result
+	    System.out.println(" the charecter at position 0 is: " +ch1);
+	    //print the result
+	    System.out.println(" the charecter at position 10 is: " +ch2);
+	}//end of main method
+	
+
+}//end of class block
